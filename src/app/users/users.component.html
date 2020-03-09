@@ -1,10 +1,20 @@
+
 <div class="container">
+    
+    <div class="row">
+        <span class="col-sm-8">Github Users</span>
+        <span class="col-sm-1">Filter</span>
+        <span class="col-sm-3"><input type="text"></span>
+    </div>
+        
     <div class="row" style="margin:10px; padding:10px">
         <div *ngFor= 'let  user of users'   class="card col-md-4">
-            <img src= "{{user.avatar_url}}" class="card-img-top">
+            <img src= "{{user.avatar_url}}" class="card-img-top"> 
             <div class= "card-body">
-            <h4 class="card-title">Username: {{user.login}}</h4>
+            <h4 class="card-title">Username: {{user.login}}</h4> 
             Repositories: <a href= "{{user.html_url}}" class="card-text">{{user.html_url}}</a>
+            <br/>
+            <a routerLink="users/{{user.login}}">View Details</a>
             </div>
         </div>
     </div>

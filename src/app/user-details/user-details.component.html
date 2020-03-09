@@ -1,0 +1,21 @@
+
+
+<div class="container">
+    <h3 >Profile details</h3>
+    <div class="row">
+        <strong class="col-sm-6">Name:</strong>
+        <p class="col-sm-6">{{user.name}}</p>
+    </div>
+    <div class="row">
+        <strong class="col-sm-6">Location:</strong>
+        <p class="col-sm-6">{{user.location?user.location:'N/A'}}</p>
+    </div>
+    <div class="row">
+        <strong class="col-sm-6">Public Repositories:</strong>
+        <p class="col-sm-6">{{user.public_repos}}</p>
+    </div>
+    <div class="row">
+        <strong class="col-sm-6">Followers:</strong>
+        <p class="col-sm-6">{{user.followers}}</p>
+    </div>
+</div>
