@@ -13,7 +13,7 @@ export class UserDetailsService {
   userUrl= "https://api.github.com/users/"
 
   
-  getUser(login: string){
+  getUser(login: string){ //type of params to be defined
   
     return this.http.get(this.userUrl + login)
   }
